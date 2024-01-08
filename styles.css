@@ -1,0 +1,141 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    transition-duration: 300ms;
+}
+
+html {
+    font-family: 'Noto Sans', sans-serif;
+}
+
+h1 {
+    font-family: 'Bungee', sans-serif;
+}
+
+body {
+    min-height: 100dvh;
+    background-color: #0f172a;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 24px;
+}
+
+header,
+main,
+footer {
+    width: 800px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    flex: 1;
+}
+
+.plus-icon {
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.plus-icon:hover {
+    color: cyan;
+}
+
+#enter-todo {
+    display: none;
+}
+
+#enter-todo form {
+    position: relative;
+    display: flex;
+    align-items: stretch; /* the items occupy the same space vertically*/
+    border: 1px solid skyblue;
+}
+
+#enter-todo form:focus-within {
+    border-color: cyan;
+}
+
+#enter-todo input {
+    background: transparent;
+    outline: none;
+    padding: 12px;
+    color: white;
+    flex: 1;
+    border: none;
+}
+
+#enter-todo button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    background: skyblue;
+    border: none;
+    outline: none;
+    padding: 0 12px;
+    color: #0f172a;
+    font-family: 'Bungee', sans-serif;
+    cursor: pointer;
+}
+
+#enter-todo button:hover {
+    background: #0f172a;
+    color: skyblue;
+}
+
+#todos {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.todo-item {
+    display: flex;
+    align-items: center;
+}
+
+.todo-item p {
+    flex: 1;
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    cursor: pointer;
+}
+
+.actions i:hover {
+    color: coral;
+}
+
+footer {
+    display: grid;
+    place-items: center;
+}
+
+footer a {
+    color: inherit;
+}
+
+footer i {
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+footer i:hover {
+    color: cyan;
+}
